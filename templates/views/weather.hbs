@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>{{ title }}</title>
+    <style>
+        .container {
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 20px;
+		}
+    </style>
 </head>
 <body>
     {{>header}}
-    <div class="jumbotron">
-        <h1 class="display-4">{{ location }}</h1>
-        <p class="lead">It is currently {{ forecastData.temperature }}°C.</p>
-        <hr class="my-4">
-        <p>Weather forecast: {{ forecastData.weather }}. {{forecastData.hourly}}</p>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">{{ location }}</h1>
+            <p class="lead">It is currently {{ forecastData.temperature }}°C.</p>
+            <hr class="my-4">
+            <p>Weather forecast: {{ forecastData.weather }}. {{forecastData.hourly}}</p>
+        </div>
     </div>
 </body>
 </html>

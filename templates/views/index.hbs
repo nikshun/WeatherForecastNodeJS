@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>{{ title }}</title>
+	<title>{{ title }}</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+		}
+		.container {
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 20px;
+		}
+		h2 {
+			margin-top: 0;
+		}
+		p {
+			margin-top: 0;
+		}
+	</style>
 </head>
 <body>
     {{>header}}
-    <h1>To be designed...use search box to find your forecast</h1>
+	<header>
+		<h1>Weather Forecastor (NodeJS school project)</h1>
+	</header>
+	<div class="container">
+		<h2>Project description</h2>
+		<p>The Weather Forecast NodeJS school project is a web application that helps people identify the weather of any region. Users just need to write a city name in the searchbox on the top right and they will be taken to the weather forecast page.</p>
+		<p>The project is built using Node.js, a popular server-side JavaScript runtime environment, and uses various APIs to fetch weather data all around the world. Also, the front-end is built using HTML, CSS, Bootstrap, and JavaScript.</p>
+		<h2>How to use the application?</h2>
+		<p>To use the application, simply type the name of the city you want to check the weather for in the searchbox on the top right and click the "Go" button. You will be taken to the weather forecast page, where you can see the current weather conditions, as well as the forecast for the nearest future.</p>
+	</div>
 </body>
 </html>
